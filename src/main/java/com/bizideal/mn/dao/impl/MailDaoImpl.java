@@ -55,6 +55,7 @@ public class MailDaoImpl implements MailDao {
 
     @Override
     public int deleteMail(long id) {
+        System.out.println(122);
         SqlSession ss = ssf.openSession();
         try {
             int rows = ss.delete(NAME_SPACE + "deleteMail", id);
